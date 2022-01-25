@@ -1,0 +1,37 @@
+.description {
+  &__title {
+    margin-top: 2rem;
+    div.description__line {
+      @include lineBlack;
+    }
+    h2.description__h2 {
+      @include h2Black;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    .description__text {
+      width: 50%;
+    }
+    h3.description__h3 {
+      @include h3Black;
+    }
+  }
+}
+
+.descriptionOr {
+  background-color: $col1;
+  padding: 1rem 0 4rem;
+  .h2Or {
+    @include h2White;
+  }
+}
+
+.description__lineOr {
+  @include lineWhite;
+}
+

@@ -1,0 +1,70 @@
+@mixin lineWhite {
+  display: block;
+  margin: auto;
+  background-color: white;
+  height: 2px;
+  width: 100px;
+}
+
+@mixin lineBlack {
+  display: block;
+  margin: auto;
+  background-color: $black;
+  height: 2px;
+  width: 100px;
+}
+
+@mixin h2Black {
+  font-family: "Playball";
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+  color: $black;
+}
+
+@mixin h2White {
+  font-family: "Playball";
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+  color: #fff;
+}
+
+@mixin h3Black {
+  font-family: "Playball";
+  color: $col1;
+}
+
+@mixin h3White {
+  text-align: center;
+  font-family: $playball;
+  color: $white;
+  margin: 0rem 0 3rem;
+  &::after {
+    content: " ";
+    position: absolute;
+    height: 2px;
+    margin: auto;
+    width: 50px;
+    text-align: center;
+    background-color: $white;
+    left: 0;
+    right: 0;
+    transform: translateY(-1rem);
+  }
+}
+@mixin transition {
+  transition: all 0.5s ease;
+}
+
+@mixin btn {
+  margin: 5px;
+  padding: 15px;
+  border: 2px solid $black;
+  color: $black;
+}
+
+@mixin btnActif {
+  margin: 5px;
+  padding: 15px;
+  border: 2px solid $col1;
+  color: $col1;
+}

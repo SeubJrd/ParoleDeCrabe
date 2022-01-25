@@ -1,0 +1,88 @@
+//importer ici vos variables sous la forme :
+//@import "./foundation/variables";
+
+@import "./foundation/variables";
+@import "./foundation/mixins";
+@import "./foundation/text";
+
+//importer ici vos fichiers scss sous la forme :
+//@import "./components/header";
+
+@import "./components/header";
+@import "./components/footer";
+@import "./components/model";
+@import "./components/gallery";
+@import "./components/loader";
+
+// en dessous on importe chaque police de caractère et chaque graisse une par une 
+
+@font-face {
+  font-family: "MorrisRoman";
+  src: url("./components/fonts/MorrisRoman-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./components/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  
+}
+
+@font-face {
+  font-family: "Poppins-Italic";
+  src: url("./components/fonts/Poppins-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("./components/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBoldItalic";
+  src: url("./components/fonts/Poppins-SemiBoldItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// et les styles généraux
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+@media screen and (max-width: 960px) { 
+  .desktop{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 960px) { 
+  .mobile{
+    display: none;
+  }
+
+}
+
+
+

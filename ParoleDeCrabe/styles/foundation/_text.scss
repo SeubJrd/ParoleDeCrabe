@@ -1,0 +1,31 @@
+p{
+  color: $colorText;
+  font-family: $FontText;
+}
+
+h1, h2, h3 {
+  color: $colorTitres;
+  font-family: $FontTitres;
+}
+
+h4{
+  color: $colorText;
+  font-family: $FontBtn;
+}
+
+.btn{
+  color: $colorTitres;
+  font-family: $FontBtn;
+  padding: 1%;
+  border: 0.2vw solid $colorTitres;
+  text-transform: uppercase;
+  text-align: center;
+  &:hover{
+    color: $colorTitres;
+  }
+  & a{
+    display: inline-block;
+    text-decoration: none;
+    color: $colorTitres;
+  }
+}

@@ -1,0 +1,48 @@
+.filter {
+  margin-bottom: 3rem;
+  h2 {
+    @include h2Black;
+    &::after {
+      content: " ";
+      position: absolute;
+      height: 2px;
+      margin: auto;
+      width: 50px;
+      text-align: center;
+      background-color: $black;
+      left: 0;
+      right: 0;
+      transform: translateY(-1rem);
+    }
+  }
+  ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    li {
+      list-style: none;
+      cursor: pointer;
+      @include btn;
+      transition: 0.3s;
+    }
+    li.actif {
+      @include btnActif;
+      transition: 0.3s;
+    }
+  }
+}
+
+#galleries {
+  margin-bottom: 3rem;
+
+  a {
+    img {
+      margin-bottom: 2.3rem;
+      width: 100%;
+      object-fit: cover;
+      height: 15rem;
+    }
+  }
+}
+
